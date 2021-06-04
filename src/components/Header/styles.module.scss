@@ -1,0 +1,93 @@
+.headerCoitainer{
+    height: 8rem;
+    background: var(--roxao) ;
+    margin-bottom: 1px;
+    
+
+}
+.headerContent{
+    max-width: 1120px;
+    height: 9rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    display:flex;
+    align-items: center;
+    
+    img{
+        width: 7%;
+        margin-bottom: 2rem;
+        margin-left:-4.5rem;
+    }
+    h1 {
+        display: flex;
+        margin-top: 5.1rem;
+        margin-left:-8.5rem;
+        color:var(--white);
+        margin-bottom:2px;
+    }
+  
+
+    nav {
+        margin-right: 22rem;
+        height: 8rem; 
+
+        a{
+            display: inline-block;
+            position:relative;
+            padding: 0 0.8rem;
+            height: 7rem;
+            line-height:10.3rem ;
+            color: var(--white);
+            font-family: 'Rationale';
+            font-size: 35px;
+
+
+            transition:color 0.2s ;
+            
+            & + a{
+                margin-left: 2rem;
+
+            }
+               
+                &:hover {
+                    color:var(--cian)
+
+                }
+                
+                &.active{
+                    color:ver(--white);
+                    font-size: 39px;
+                    
+                }
+
+                &.active::after {
+                    content: '';
+                    height: 5%;
+                    border-radius:100%;
+                    width: 6%;
+                    position: absolute;
+                    bottom: 1px;
+                    right: 45px;
+                    background: var(--white);
+                }
+               
+               
+
+            }
+       
+
+    }
+    
+    button{
+        margin-left: auto;
+        margin-top: 4.9%;
+    }
+
+
+
+
+
+
+
+}
